@@ -1,13 +1,14 @@
-N = 10
-K = 5
-candies = N
-order = int(input("Enter number of candies: "))
-
-if order > candies or order <= 0:
-    print("INVALID INPUT")
+n= 10
+k= 5
+jar= n
+num=int(input("Enter no.of candies: "))
+if num>jar:
+    print("Invalid input")
 else:
-    candies -= order
-    print("Number of Candies Sold:", order)
-    if candies <= K:
-        candies = N
-    print("Number of Candies available:", candies)
+    jar=jar-num
+    print("No.of candies sold:", num)
+    print("No.of candies available:", jar)
+    if jar<=k:
+        jar=n
+        print("jar refilled")
+        print("No.of candies available:", jar)
